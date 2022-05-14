@@ -1,13 +1,13 @@
 # local terraform provider
 resource "local_file" "test" {
-    filename = "/home/fady/test.txt"
-    content = "terraform first example"
+    filename = var.filename
+    content = var.content
 }
 
 # random terraform provider
 
 resource "random_pet" "petto" {
-    prefix = "Mr"
-    separator = "."
-    length = "1"
+    prefix = var.prefix
+    separator = var.separator
+    length = var.length
 }
