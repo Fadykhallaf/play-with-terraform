@@ -1,7 +1,7 @@
 # local terraform provider
 resource "local_file" "test" {
     filename = var.filename
-    content = var.content["stat2"]
+    content = "my favorite pet is ${random_pet.petto.id}"
 }
 
 # random terraform provider
